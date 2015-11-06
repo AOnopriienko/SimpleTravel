@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionApp.Services.Interface
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{8405EC9F-53E7-40BF-921C-119E623CB97D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionApp.Infrastructure.Data", "OnionApp.Infrastructure.Data\OnionApp.Infrastructure.Data.csproj", "{8FC139D6-C4A7-482F-8FA7-427293F84EB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionApp.Infrastructure.Business", "OnionApp.Infrastructure.Business\OnionApp.Infrastructure.Business.csproj", "{063696AF-4D88-49E2-B55C-DAAD6D424CD6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +47,14 @@ Global
 		{6117A2BB-F2C5-4194-AA1D-2E981C79045B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6117A2BB-F2C5-4194-AA1D-2E981C79045B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6117A2BB-F2C5-4194-AA1D-2E981C79045B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FC139D6-C4A7-482F-8FA7-427293F84EB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FC139D6-C4A7-482F-8FA7-427293F84EB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FC139D6-C4A7-482F-8FA7-427293F84EB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FC139D6-C4A7-482F-8FA7-427293F84EB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{063696AF-4D88-49E2-B55C-DAAD6D424CD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{063696AF-4D88-49E2-B55C-DAAD6D424CD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{063696AF-4D88-49E2-B55C-DAAD6D424CD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{063696AF-4D88-49E2-B55C-DAAD6D424CD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,5 +63,7 @@ Global
 		{87B34BD3-3844-4AB9-AFDC-455FAAB3B795} = {208B189E-A2BE-4403-B3E3-F4C31302808C}
 		{462B5F13-D1F0-4AF8-BF4D-43936EC1C783} = {208B189E-A2BE-4403-B3E3-F4C31302808C}
 		{6117A2BB-F2C5-4194-AA1D-2E981C79045B} = {96CC4B3D-DF63-4653-818B-56BA48A87612}
+		{8FC139D6-C4A7-482F-8FA7-427293F84EB1} = {8405EC9F-53E7-40BF-921C-119E623CB97D}
+		{063696AF-4D88-49E2-B55C-DAAD6D424CD6} = {8405EC9F-53E7-40BF-921C-119E623CB97D}
 	EndGlobalSection
 EndGlobal

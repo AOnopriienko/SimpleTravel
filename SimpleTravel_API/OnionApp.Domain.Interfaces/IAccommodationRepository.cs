@@ -13,7 +13,7 @@ namespace OnionApp.Domain.Interfaces
         Accommodation GetAccommodation(Guid id);
         void Create(Accommodation item);
         void Update(Accommodation item);
-        void Delete(Accommodation item);
+        void Delete(Guid id);
         void Save(Accommodation item);
     }
 }
