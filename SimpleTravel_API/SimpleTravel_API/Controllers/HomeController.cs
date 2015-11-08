@@ -11,8 +11,8 @@ namespace SimpleTravel_API.Controllers
 {
     public class HomeController : Controller
     {
-        IAccommodationRepository repo;
-        IReservation reservation;
+        public IAccommodationRepository repo;
+        public IReservation reservation;
         public HomeController(IAccommodationRepository r, IReservation res)
         {
             repo = r;
@@ -20,7 +20,16 @@ namespace SimpleTravel_API.Controllers
         }
         public ActionResult Index()
         {
-            var accommodation = repo.GetAccommodationList();
+            /*
+            Accommodation ac = new Accommodation();
+            ac.Id = Guid.NewGuid();
+            ac.Address = "Test 1";
+            ac.Name = "Hotel 1";
+            ac.TypeId = AccommodationType.Hotel;
+            repo.Create(ac);
+            repo.Save();
+             */
+            //var accommodation = repo.GetAccommodationList();
             return View();
         }
         public ActionResult Reservation(Guid id)

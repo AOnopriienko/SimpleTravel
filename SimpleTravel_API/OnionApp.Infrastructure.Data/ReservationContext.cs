@@ -14,7 +14,7 @@ namespace OnionApp.Infrastructure.Data
         public DbSet<Accommodation> Accommodations { get; set; }
     }
 
-    public class AccommodationRepository : IAccommodationRepository
+    public class AccommodationRepository: IAccommodationRepository
     {
         private ReservationContext db;
         public AccommodationRepository()

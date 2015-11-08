@@ -14,6 +14,6 @@ namespace OnionApp.Domain.Interfaces
         void Create(Accommodation item);
         void Update(Accommodation item);
         void Delete(Guid id);
-        void Save(Accommodation item);
+        void Save();
     }
 }
