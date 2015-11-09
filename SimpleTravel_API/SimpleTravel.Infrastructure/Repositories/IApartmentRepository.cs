@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using OnionApp.Domain.Core;
 
-namespace OnionApp.Domain.Interfaces
+namespace SimpleTravel.Infrastructure
 {
-    public interface IApartmentRepository: IDisposable
+    public interface IApartmentRepository : IDisposable
     {
         IEnumerable<Apartment> GetApartmentList();
         Apartment GetApartment(Guid id);

@@ -12,7 +12,7 @@ namespace SimpleTravel.Infrastructure
         public DbSet<Apartment> Apartments { get; set; }
     }
 
-    public class ApartmentRepository: IApartmentRepository
+    public class ApartmentRepository : IApartmentRepository
     {
         private TripContext db;
         public ApartmentRepository()
