@@ -4,45 +4,43 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
-using OnionApp.Domain.Core;
-using OnionApp.Domain.Interfaces;
 
-namespace OnionApp.Infrastructure.Data
+namespace SimpleTravel.Infrastructure
 {
-    public class ReservationContext: DbContext
+    public class TripContext : DbContext
     {
-        public DbSet<Accommodation> Accommodations { get; set; }
+        public DbSet<Apartment> Apartments { get; set; }
     }
 
-    public class AccommodationRepository: IAccommodationRepository
+    public class ApartmentRepository: IApartmentRepository
     {
-        private ReservationContext db;
-        public AccommodationRepository()
+        private TripContext db;
+        public ApartmentRepository()
         {
-            this.db = new ReservationContext();
+            this.db = new TripContext();
         }
-        public IEnumerable<Accommodation> GetAccommodationList()
+        public IEnumerable<Apartment> GetApartmentList()
         {
-            return db.Accommodations.ToList();
+            return db.Apartments.ToList();
         }
-        public Accommodation GetAccommodation(Guid id)
+        public Apartment GetApartment(Guid id)
         {
-            return db.Accommodations.Find(id);
+            return db.Apartments.Find(id);
         }
-        public void Create(Accommodation accommodation)
+        public void Create(Apartment Apartment)
         {
-            db.Accommodations.Add(accommodation);
+            db.Apartments.Add(Apartment);
         }
-        public void Update(Accommodation accommodation)
+        public void Update(Apartment Apartment)
         {
-            db.Entry(accommodation).State = EntityState.Modified;
+            db.Entry(Apartment).State = EntityState.Modified;
         }
         public void Delete(Guid id)
         {
-            Accommodation accommodation = db.Accommodations.Find(id);
-            if (accommodation != null)
+            Apartment Apartment = db.Apartments.Find(id);
+            if (Apartment != null)
             {
-                db.Accommodations.Remove(accommodation);
+                db.Apartments.Remove(Apartment);
             }
         }
         public void Save()

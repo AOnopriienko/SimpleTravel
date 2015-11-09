@@ -2,11 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using OnionApp.Domain.Core;
-using OnionApp.Domain.Interfaces;
-using OnionApp.Infrastructure.Business;
-using OnionApp.Infrastructure.Data;
-using OnionApp.Services.Interfaces;
+using SimpleTravel.Infrastructure;
 using Ninject;
 using System.Web.Mvc;
 
@@ -30,7 +26,7 @@ namespace SimpleTravel_API.Util
         }
         private void AddBindings()
         {
-            kernel.Bind<IAccommodationRepository>().To<AccommodationRepository>();
+            kernel.Bind<IApartmentRepository>().To<ApartmentRepository>();
             kernel.Bind<IReservation>().To<CacheReservation>();
         }
     }

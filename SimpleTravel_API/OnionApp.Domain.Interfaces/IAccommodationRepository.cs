@@ -7,12 +7,12 @@ using OnionApp.Domain.Core;
 
 namespace OnionApp.Domain.Interfaces
 {
-    public interface IAccommodationRepository: IDisposable
+    public interface IApartmentRepository: IDisposable
     {
-        IEnumerable<Accommodation> GetAccommodationList();
-        Accommodation GetAccommodation(Guid id);
-        void Create(Accommodation item);
-        void Update(Accommodation item);
+        IEnumerable<Apartment> GetApartmentList();
+        Apartment GetApartment(Guid id);
+        void Create(Apartment item);
+        void Update(Apartment item);
         void Delete(Guid id);
         void Save();
     }

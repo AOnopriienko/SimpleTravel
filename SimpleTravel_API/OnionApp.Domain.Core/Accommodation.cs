@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace OnionApp.Domain.Core
 {
-    public class Accommodation
+    public class Apartment
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
-        public AccommodationType TypeId { get; set; }
+        public ApartmentType TypeId { get; set; }
         public string Address { get; set; }
     }
 
-    public enum AccommodationType
+    public enum ApartmentType
     {
         Hotel,
         Motel,

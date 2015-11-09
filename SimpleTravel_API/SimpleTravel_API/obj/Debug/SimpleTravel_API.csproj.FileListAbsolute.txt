@@ -138,6 +138,7 @@ E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\Simpl
 E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\SimpleTravel_API.pdb
 E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\Antlr3.Runtime.dll
 E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\EntityFramework.dll
+E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\EntityFramework.SqlServer.dll
 E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\Microsoft.Data.Edm.dll
 E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\Microsoft.Data.OData.dll
 E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\Microsoft.Web.Infrastructure.dll
@@ -146,11 +147,7 @@ E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\Newto
 E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\Ninject.dll
 E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\Ninject.Web.Common.dll
 E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\Ninject.Web.Mvc.dll
-E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\OnionApp.Domain.Core.dll
-E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\OnionApp.Domain.Interfaces.dll
-E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\OnionApp.Infrastructure.Business.dll
-E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\OnionApp.Infrastructure.Data.dll
-E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\OnionApp.Services.Interfaces.dll
+E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\SimpleTravel.Infrastructure.dll
 E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\System.Net.Http.Formatting.dll
 E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\System.Spatial.dll
 E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\System.Web.Helpers.dll
@@ -167,16 +164,13 @@ E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\Syste
 E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\System.Web.WebPages.Razor.dll
 E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\WebActivatorEx.dll
 E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\WebGrease.dll
-E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\OnionApp.Domain.Core.pdb
-E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\OnionApp.Domain.Interfaces.pdb
-E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\OnionApp.Infrastructure.Business.pdb
-E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\OnionApp.Infrastructure.Data.pdb
-E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\OnionApp.Services.Interfaces.pdb
+E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\SimpleTravel.Infrastructure.pdb
+E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\EntityFramework.xml
+E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\EntityFramework.SqlServer.xml
+E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\Newtonsoft.Json.xml
 E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\Ninject.xml
 E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\Ninject.Web.Common.xml
 E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\Ninject.Web.Mvc.xml
-E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\EntityFramework.xml
-E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\Newtonsoft.Json.xml
 E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\System.Net.Http.Formatting.xml
 E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\System.Web.Helpers.xml
 E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\System.Web.Http.xml
@@ -221,5 +215,3 @@ E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\zh-Ha
 E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\obj\Debug\SimpleTravel_API.csprojResolveAssemblyReference.cache
 E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\obj\Debug\SimpleTravel_API.dll
 E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\obj\Debug\SimpleTravel_API.pdb
-E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\EntityFramework.SqlServer.dll
-E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\EntityFramework.SqlServer.xml

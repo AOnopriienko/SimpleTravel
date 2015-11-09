@@ -10,7 +10,7 @@ namespace OnionApp.Infrastructure.Business
 {
     public class CreditReservation : IReservation
     {
-        public void MakeReservation(Accommodation accomodation)
+        public void MakeReservation(Apartment accomodation)
         {
             //код бронирования жилья с помощью кредитной карты
         }

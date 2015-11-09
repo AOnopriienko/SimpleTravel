@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using OnionApp.Domain.Core;
 
-namespace OnionApp.Services.Interfaces
+namespace SimpleTravel.Infrastructure
 {
     public interface IReservation
     {
-        void MakeReservation(Accommodation accomodation);
+        void MakeReservation(Apartment apartment);
     }
 }

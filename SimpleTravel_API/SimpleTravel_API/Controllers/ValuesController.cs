@@ -4,22 +4,18 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using OnionApp.Domain.Core;
-using OnionApp.Domain.Interfaces;
-using OnionApp.Services.Interfaces;
-using OnionApp.Infrastructure.Business;
-using OnionApp.Infrastructure.Data;
 using Newtonsoft.Json;
 using Ninject;
+using SimpleTravel.Infrastructure;
 
 namespace SimpleTravel_API.Controllers
 {
     public class ValuesController : ApiController
     {
-        private readonly IAccommodationRepository repo;// = new AccommodationRepository();
-        private readonly IReservation reservation;// = new CacheReservation();
+        private readonly IApartmentRepository repo;
+        private readonly IReservation reservation;
         
-        public ValuesController(IAccommodationRepository r, IReservation res) 
+        public ValuesController(IApartmentRepository r, IReservation res) 
         {
             repo = r;
             reservation = res;
@@ -27,27 +23,27 @@ namespace SimpleTravel_API.Controllers
         
         public ValuesController()
         {
-            this.repo = new AccommodationRepository();
+            this.repo = new ApartmentRepository();
             this.reservation = new CacheReservation();
         }
         // GET api/values
         public IEnumerable<string> Get()
         {
-            var accommodation = repo.GetAccommodationList();
-            string acList = JsonConvert.SerializeObject(accommodation);
+            var apartment = repo.GetApartmentList();
+            string acList = JsonConvert.SerializeObject(apartment);
             return new string[] { "value1", "value2" };
         }
 
         // GET api/values/5
-        public string Get(string acName, string acAdress, AccommodationType acType)
+        public string Get(string acName, string acAdress, ApartmentType acType)
         {
 
             //find by numberId = id Contact in DB. 
-            Accommodation ac = new Accommodation() { Id = Guid.NewGuid(), TypeId = acType, Name = acName, Address = acAdress };
+            Apartment ac = new Apartment() { Id = Guid.NewGuid(), TypeId = acType, Name = acName, Address = acAdress };
             repo.Create(ac);
             repo.Save();
-            var accommodation = repo.GetAccommodationList();
-            string acList = JsonConvert.SerializeObject(accommodation);
+            var apartment = repo.GetApartmentList();
+            string acList = JsonConvert.SerializeObject(apartment);
             return acList;
         }
 

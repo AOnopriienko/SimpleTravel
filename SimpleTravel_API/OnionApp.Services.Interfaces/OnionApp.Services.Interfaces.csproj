@@ -42,12 +42,6 @@
     <Compile Include="IReservation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\OnionApp.Domain.Core\OnionApp.Domain.Core.csproj">
-      <Project>{87b34bd3-3844-4ab9-afdc-455faab3b795}</Project>
-      <Name>OnionApp.Domain.Core</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

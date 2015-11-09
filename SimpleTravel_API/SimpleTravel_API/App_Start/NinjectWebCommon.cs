@@ -10,11 +10,7 @@ namespace SimpleTravel_API.App_Start
 
     using Ninject;
     using Ninject.Web.Common;
-    using OnionApp.Domain.Core;
-    using OnionApp.Domain.Interfaces;
-    using OnionApp.Services.Interfaces;
-    using OnionApp.Infrastructure.Business;
-    using OnionApp.Infrastructure.Data;
+    using SimpleTravel.Infrastructure;
     using Ninject.Web.Mvc;
     using System.Web.Http;
 
@@ -72,8 +68,6 @@ namespace SimpleTravel_API.App_Start
         private static void RegisterServices(IKernel kernel)
         {
             System.Web.Mvc.DependencyResolver.SetResolver(new SimpleTravel_API.Util.NinjectDependencyResolver(kernel));
-            //kernel.Bind<IAccommodationRepository>().To<AccommodationRepository>();
-            //kernel.Bind<IReservation>().To<CacheReservation>();
         }        
     }
 }

@@ -178,7 +178,6 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
-    <Compile Include="Contact.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -308,25 +307,12 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OnionApp.Domain.Core\OnionApp.Domain.Core.csproj">
-      <Project>{87b34bd3-3844-4ab9-afdc-455faab3b795}</Project>
-      <Name>OnionApp.Domain.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\OnionApp.Domain.Interfaces\OnionApp.Domain.Interfaces.csproj">
-      <Project>{462b5f13-d1f0-4af8-bf4d-43936ec1c783}</Project>
-      <Name>OnionApp.Domain.Interfaces</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\OnionApp.Infrastructure.Business\OnionApp.Infrastructure.Business.csproj">
-      <Project>{063696af-4d88-49e2-b55c-daad6d424cd6}</Project>
-      <Name>OnionApp.Infrastructure.Business</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\OnionApp.Infrastructure.Data\OnionApp.Infrastructure.Data.csproj">
-      <Project>{8fc139d6-c4a7-482f-8fa7-427293f84eb1}</Project>
-      <Name>OnionApp.Infrastructure.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\OnionApp.Services.Interfaces\OnionApp.Services.Interfaces.csproj">
-      <Project>{6117a2bb-f2c5-4194-aa1d-2e981c79045b}</Project>
-      <Name>OnionApp.Services.Interfaces</Name>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleTravel.Infrastructure\SimpleTravel.Infrastructure.csproj">
+      <Project>{54a336d2-ccaf-4efc-9568-f1b576d40982}</Project>
+      <Name>SimpleTravel.Infrastructure</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
