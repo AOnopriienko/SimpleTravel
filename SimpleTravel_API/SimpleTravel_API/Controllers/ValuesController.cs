@@ -12,8 +12,8 @@ namespace SimpleTravel_API.Controllers
 {
     public class ValuesController : ApiController
     {
-        private readonly IApartmentRepository repo;
-        private readonly IReservation reservation;
+        public IApartmentRepository repo;
+        public IReservation reservation;
         
         public ValuesController(IApartmentRepository r, IReservation res) 
         {

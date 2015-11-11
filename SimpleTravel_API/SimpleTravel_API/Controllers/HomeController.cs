@@ -17,19 +17,23 @@ namespace SimpleTravel_API.Controllers
             repo = r;
             reservation = res;
         }
+        public HomeController()
+        {
+        }
         public ActionResult Index()
         {
+            //Apartment apartment = repo.GetApartment(id);
             return View();
         }
         public ActionResult Reservation(Guid id)
         {
-            Apartment apartment = repo.GetApartment(id);
-            reservation.MakeReservation(apartment);
+            //Apartment apartment = repo.GetApartment(id);
+            //reservation.MakeReservation(apartment);
             return View();
         }
         protected override void Dispose(bool disposing)
         {
-            repo.Dispose();
+            //repo.Dispose();
             base.Dispose(disposing);
         }
     }

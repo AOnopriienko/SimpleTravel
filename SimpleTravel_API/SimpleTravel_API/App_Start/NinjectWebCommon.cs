@@ -13,6 +13,7 @@ namespace SimpleTravel_API.App_Start
     using SimpleTravel.Infrastructure;
     using Ninject.Web.Mvc;
     using System.Web.Http;
+    using SimpleTravel_API.Util;
 
     public static class NinjectWebCommon 
     {
@@ -51,7 +52,8 @@ namespace SimpleTravel_API.App_Start
                 RegisterServices(kernel);
 
                 // Install our Ninject-based IDependencyResolver into the Web API config
-                //GlobalConfiguration.Configuration.DependencyResolver = new NinjectDependencyResolver(kernel);
+                NinjectResolver nR = new NinjectResolver(kernel);
+                GlobalConfiguration.Configuration.DependencyResolver = (System.Web.Http.Dependencies.IDependencyResolver)nR;
                 return kernel;
             }
             catch
@@ -68,6 +70,12 @@ namespace SimpleTravel_API.App_Start
         private static void RegisterServices(IKernel kernel)
         {
             System.Web.Mvc.DependencyResolver.SetResolver(new SimpleTravel_API.Util.NinjectDependencyResolver(kernel));
-        }        
+        }
+        public static void RegisterNinject(HttpConfiguration configuration)
+        {
+            // Set Web API Resolver
+            //configuration.DependencyResolver = new NinjectDependencyResolver();
+
+        }
     }
 }
