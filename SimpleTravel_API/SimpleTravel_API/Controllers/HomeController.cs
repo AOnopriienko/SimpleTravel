@@ -10,30 +10,26 @@ namespace SimpleTravel_API.Controllers
 {
     public class HomeController : Controller
     {
-        public IRepository<Trip> repo;
-        public IReservation reservation;
-        public HomeController(IRepository<Trip> r, IReservation res)
+        public IRepository<Trip> repository;
+        public HomeController(IRepository<Trip> repositoryTrip)
         {
-            repo = r;
-            reservation = res;
+            repository = repositoryTrip;
         }
         public HomeController()
         {
         }
         public ActionResult Index()
         {
-            //Apartment apartment = repo.GetApartment(id);
-            return View();
+            var listItems = repository.GetList();
+            return View(listItems);
         }
         public ActionResult Reservation(Guid id)
         {
-            //Apartment apartment = repo.GetApartment(id);
-            //reservation.MakeReservation(apartment);
             return View();
         }
         protected override void Dispose(bool disposing)
         {
-            //repo.Dispose();
+            repository.Dispose();
             base.Dispose(disposing);
         }
     }

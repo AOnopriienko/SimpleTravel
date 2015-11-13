@@ -151,7 +151,6 @@ E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\bin\zh-Ha
 E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\obj\Debug\SimpleTravel_API.csprojResolveAssemblyReference.cache
 E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\obj\Debug\SimpleTravel_API.dll
 E:\Work\GitHub\Projects\SimpleTravel\SimpleTravel_API\SimpleTravel_API\obj\Debug\SimpleTravel_API.pdb
-D:\Work\GitHub\SimpleTravel_API\SimpleTravel_API\obj\Debug\SimpleTravel_API.csprojResolveAssemblyReference.cache
 D:\Work\GitHub\SimpleTravel_API\SimpleTravel_API\bin\SimpleTravel_API.dll
 D:\Work\GitHub\SimpleTravel_API\SimpleTravel_API\bin\SimpleTravel_API.pdb
 D:\Work\GitHub\SimpleTravel_API\SimpleTravel_API\bin\Antlr3.Runtime.dll
@@ -232,5 +231,6 @@ D:\Work\GitHub\SimpleTravel_API\SimpleTravel_API\bin\ko\System.Spatial.resources
 D:\Work\GitHub\SimpleTravel_API\SimpleTravel_API\bin\ru\System.Spatial.resources.dll
 D:\Work\GitHub\SimpleTravel_API\SimpleTravel_API\bin\zh-Hans\System.Spatial.resources.dll
 D:\Work\GitHub\SimpleTravel_API\SimpleTravel_API\bin\zh-Hant\System.Spatial.resources.dll
+D:\Work\GitHub\SimpleTravel_API\SimpleTravel_API\obj\Debug\SimpleTravel_API.csprojResolveAssemblyReference.cache
 D:\Work\GitHub\SimpleTravel_API\SimpleTravel_API\obj\Debug\SimpleTravel_API.dll
 D:\Work\GitHub\SimpleTravel_API\SimpleTravel_API\obj\Debug\SimpleTravel_API.pdb

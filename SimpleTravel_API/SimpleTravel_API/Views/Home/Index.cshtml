@@ -1,4 +1,5 @@
-﻿<div id="body">
+﻿@model IEnumerable<SimpleTravel.Infrastructure.Apartment>
+<div id="body">
     <section class="featured">
         <div class="content-wrapper">
             <hgroup class="title">
@@ -41,5 +42,11 @@
                 <a href="http://go.microsoft.com/fwlink/?LinkId=245164">Learn more…</a>
             </li>
         </ol>
+        <ul>
+            @foreach (var trip in Model) 
+            {
+                <li>@trip.Name</li> 
+            }
+        </ul>
     </section>
 </div>

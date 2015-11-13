@@ -13,24 +13,21 @@ namespace SimpleTravel_API.Controllers
 {
     public class ValuesController : ApiController
     {
-        public IRepository<Apartment> repo;
-        public IReservation reservation;
+        public IRepository<Apartment> repository;
 
-        public ValuesController(IRepository<Apartment> r, IReservation res) 
+        public ValuesController(IRepository<Apartment> apartmentRepository) 
         {
-            repo = r;
-            reservation = res;
+            repository = apartmentRepository;
         }
         
         public ValuesController()
         {
-            this.repo = new ApartmentRepository();
-            this.reservation = new CacheReservation();
+            this.repository = new ApartmentRepository();
         }
         // GET api/values
         public IEnumerable<string> Get()
         {
-            var apartment = repo.GetList();
+            var apartment = repository.GetList();
             string acList = JsonConvert.SerializeObject(apartment);
             return new string[] { "value1", "value2" };
         }
@@ -41,9 +38,9 @@ namespace SimpleTravel_API.Controllers
 
             //find by numberId = id Contact in DB. 
             Apartment ac = new Apartment() { Id = Guid.NewGuid(), TypeId = acType, Name = acName, Address = acAdress };
-            repo.Create(ac);
-            repo.Save();
-            var apartment = repo.GetList();
+            repository.Create(ac);
+            repository.Save();
+            var apartment = repository.GetList();
             string acList = JsonConvert.SerializeObject(apartment);
             return acList;
         }
@@ -64,7 +61,7 @@ namespace SimpleTravel_API.Controllers
         }
         protected override void Dispose(bool disposing)
         {
-            repo.Dispose();
+            repository.Dispose();
             base.Dispose(disposing);
         }
     }
