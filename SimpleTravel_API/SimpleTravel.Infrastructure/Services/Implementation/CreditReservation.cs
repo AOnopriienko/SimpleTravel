@@ -8,8 +8,8 @@ namespace SimpleTravel.Infrastructure
 {
     public class CreditReservation : IReservation
     {
-        private readonly IApartmentRepository repository;
-        public CreditReservation(IApartmentRepository repo)
+        private readonly IRepository<Apartment> repository;
+        public CreditReservation(IRepository<Apartment> repo)
         {
             this.repository = repo;
         }

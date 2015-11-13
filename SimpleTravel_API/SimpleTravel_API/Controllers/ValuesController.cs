@@ -7,15 +7,16 @@ using System.Web.Http;
 using Newtonsoft.Json;
 using Ninject;
 using SimpleTravel.Infrastructure;
+using SimpleTravel.Infrastructure.Repositories.Implementation;
 
 namespace SimpleTravel_API.Controllers
 {
     public class ValuesController : ApiController
     {
-        public IApartmentRepository repo;
+        public IRepository<Apartment> repo;
         public IReservation reservation;
-        
-        public ValuesController(IApartmentRepository r, IReservation res) 
+
+        public ValuesController(IRepository<Apartment> r, IReservation res) 
         {
             repo = r;
             reservation = res;
@@ -29,7 +30,7 @@ namespace SimpleTravel_API.Controllers
         // GET api/values
         public IEnumerable<string> Get()
         {
-            var apartment = repo.GetApartmentList();
+            var apartment = repo.GetList();
             string acList = JsonConvert.SerializeObject(apartment);
             return new string[] { "value1", "value2" };
         }
@@ -42,7 +43,7 @@ namespace SimpleTravel_API.Controllers
             Apartment ac = new Apartment() { Id = Guid.NewGuid(), TypeId = acType, Name = acName, Address = acAdress };
             repo.Create(ac);
             repo.Save();
-            var apartment = repo.GetApartmentList();
+            var apartment = repo.GetList();
             string acList = JsonConvert.SerializeObject(apartment);
             return acList;
         }

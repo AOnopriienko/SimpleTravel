@@ -10,9 +10,9 @@ namespace SimpleTravel_API.Controllers
 {
     public class HomeController : Controller
     {
-        public IApartmentRepository repo;
+        public IRepository<Trip> repo;
         public IReservation reservation;
-        public HomeController(IApartmentRepository r, IReservation res)
+        public HomeController(IRepository<Trip> r, IReservation res)
         {
             repo = r;
             reservation = res;

@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace SimpleTravel.Infrastructure
 {
-    public interface IApartmentRepository : IDisposable
+    public interface IRepository<T> : IDisposable
     {
-        IEnumerable<Apartment> GetApartmentList();
-        Apartment GetApartment(Guid id);
-        void Create(Apartment item);
-        void Update(Apartment item);
+        IEnumerable<T> GetList();
+        T Get(Guid id);
+        void Create(T item);
+        void Update(T item);
         void Delete(Guid id);
         void Save();
     }

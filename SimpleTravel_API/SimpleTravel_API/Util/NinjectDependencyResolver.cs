@@ -10,6 +10,7 @@ using Ninject.Syntax;
 using Ninject.Parameters;
 using System.Web.Http.Dependencies;
 using Ninject.Activation;
+using SimpleTravel.Infrastructure.Repositories.Implementation;
 
 namespace SimpleTravel_API.Util
 {
@@ -71,8 +72,10 @@ namespace SimpleTravel_API.Util
         }
         private void AddBindings()
         {
-            kernel.Bind<IApartmentRepository>().To<ApartmentRepository>();
+            kernel.Bind<IRepository<Apartment>>().To<ApartmentRepository>();
+            kernel.Bind<IRepository<Trip>>().To<TripRepository>();
             kernel.Bind<IReservation>().To<CacheReservation>();
+            //kernel.Bind<IReservation>().To<CreditReservation>().Named("Values");
         }
     }
 }

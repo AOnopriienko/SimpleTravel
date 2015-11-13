@@ -49,7 +49,9 @@
     <Compile Include="Entities\Apartment.cs" />
     <Compile Include="Entities\Trip.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\IApartmentRepository.cs" />
+    <Compile Include="Repositories\Implementation\ApartmentRepository.cs" />
+    <Compile Include="Repositories\Implementation\TripRepository.cs" />
+    <Compile Include="Repositories\IRepository.cs" />
     <Compile Include="Repositories\Implementation\TripContext.cs" />
     <Compile Include="Repositories\ITripRepository.cs" />
     <Compile Include="Services\Implementation\CacheReservation.cs" />
