@@ -8,6 +8,7 @@ using Newtonsoft.Json;
 using Ninject;
 using SimpleTravel.Infrastructure;
 using SimpleTravel.Infrastructure.Repositories.Implementation;
+using SimpleTravel.Infrastructure.Entities;
 
 namespace SimpleTravel_API.Controllers
 {

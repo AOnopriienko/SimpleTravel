@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using Ninject;
 using SimpleTravel.Infrastructure;
+using SimpleTravel.Infrastructure.Entities;
 
 namespace SimpleTravel_API.Controllers
 {

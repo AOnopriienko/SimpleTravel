@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SimpleTravel.Infrastructure
+namespace SimpleTravel.Infrastructure.Entities
 {
     public class Apartment
     {

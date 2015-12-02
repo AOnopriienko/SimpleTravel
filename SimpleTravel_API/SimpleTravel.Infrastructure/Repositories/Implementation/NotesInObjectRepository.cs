@@ -3,41 +3,40 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.Entity;
 using SimpleTravel.Infrastructure.Entities;
-
+using System.Data.Entity;
 
 namespace SimpleTravel.Infrastructure.Repositories.Implementation
 {
-    public class TripRepository: IRepository<Trip>
+    public class NotesInObjectRepository
     {
         private TripContext db;
-        public TripRepository()
+        public NotesInObjectRepository()
         {
             this.db = new TripContext();
         }
-        public IEnumerable<Trip> GetList()
+        public IEnumerable<NotesInObject> GetList()
         {
-            return db.Trips.ToList();
+            return db.NotesInObjects.ToList();
         }
-        public Trip Get(Guid id)
+        public NotesInObject Get(Guid id)
         {
-            return db.Trips.Find(id);
+            return db.NotesInObjects.Find(id);
         }
-        public void Create(Trip trip)
+        public void Create(NotesInObject NotesInObject)
         {
-            db.Trips.Add(trip);
+            db.NotesInObjects.Add(NotesInObject);
         }
-        public void Update(Trip trip)
+        public void Update(NotesInObject NotesInObject)
         {
-            db.Entry(trip).State = EntityState.Modified;
+            db.Entry(NotesInObject).State = EntityState.Modified;
         }
         public void Delete(Guid id)
         {
-            Trip trip = db.Trips.Find(id);
-            if (trip != null)
+            NotesInObject NotesInObject = db.NotesInObjects.Find(id);
+            if (NotesInObject != null)
             {
-                db.Trips.Remove(trip);
+                db.NotesInObjects.Remove(NotesInObject);
             }
         }
         public void Save()

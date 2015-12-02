@@ -9,7 +9,7 @@ namespace SimpleTravel.Infrastructure.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
             ContextKey = "SimpleTravel.Infrastructure.Repositories.Implementation.TripContext";
         }
 

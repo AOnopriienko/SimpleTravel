@@ -47,22 +47,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Apartment.cs" />
+    <Compile Include="Entities\Note.cs" />
+    <Compile Include="Entities\NotesInObject.cs" />
+    <Compile Include="Entities\Place.cs" />
+    <Compile Include="Entities\Transport.cs" />
     <Compile Include="Entities\Trip.cs" />
     <Compile Include="Migrations\201511142216498_InitialCreate.cs" />
     <Compile Include="Migrations\201511142216498_InitialCreate.Designer.cs">
       <DependentUpon>201511142216498_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201511142233436_1.cs" />
-    <Compile Include="Migrations\201511142233436_1.Designer.cs">
-      <DependentUpon>201511142233436_1.cs</DependentUpon>
+    <Compile Include="Migrations\201512022247011_1.cs" />
+    <Compile Include="Migrations\201512022247011_1.Designer.cs">
+      <DependentUpon>201512022247011_1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\Implementation\ApartmentRepository.cs" />
+    <Compile Include="Repositories\Implementation\NoteRepository.cs" />
+    <Compile Include="Repositories\Implementation\NotesInObjectRepository.cs" />
+    <Compile Include="Repositories\Implementation\PlaceRepository.cs" />
+    <Compile Include="Repositories\Implementation\TransportRepository.cs" />
     <Compile Include="Repositories\Implementation\TripRepository.cs" />
     <Compile Include="Repositories\IRepository.cs" />
     <Compile Include="Repositories\Implementation\TripContext.cs" />
-    <Compile Include="Repositories\ITripRepository.cs" />
     <Compile Include="Services\Implementation\CacheReservation.cs" />
     <Compile Include="Services\Implementation\CreditReservation.cs" />
     <Compile Include="Services\IReservation.cs" />
@@ -78,8 +85,8 @@
     <EmbeddedResource Include="Migrations\201511142216498_InitialCreate.resx">
       <DependentUpon>201511142216498_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201511142233436_1.resx">
-      <DependentUpon>201511142233436_1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201512022247011_1.resx">
+      <DependentUpon>201512022247011_1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

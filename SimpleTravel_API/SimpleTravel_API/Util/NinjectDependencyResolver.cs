@@ -11,6 +11,7 @@ using Ninject.Parameters;
 using System.Web.Http.Dependencies;
 using Ninject.Activation;
 using SimpleTravel.Infrastructure.Repositories.Implementation;
+using SimpleTravel.Infrastructure.Entities;
 
 namespace SimpleTravel_API.Util
 {

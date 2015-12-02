@@ -13,7 +13,7 @@ namespace SimpleTravel.Infrastructure.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201511142233436_1"; }
+            get { return "201512022247011_1"; }
         }
         
         string IMigrationMetadata.Source
