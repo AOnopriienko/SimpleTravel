@@ -26,11 +26,11 @@ namespace SimpleTravel_API.Controllers
             this.repository = new ApartmentRepository();
         }
         // GET api/values
-        public IEnumerable<string> Get()
+        public string Get()
         {
             var apartment = repository.GetList();
             string acList = JsonConvert.SerializeObject(apartment);
-            return new string[] { "value1", "value2" };
+            return acList;
         }
 
         // GET api/values/5

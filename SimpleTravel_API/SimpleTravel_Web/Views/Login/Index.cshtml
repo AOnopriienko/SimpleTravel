@@ -1,0 +1,29 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="Content\loginStyle.css" media="screen" type="text/css" />
+    <link rel="icon" href="http://vladmaxi.net/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://vladmaxi.net/favicon.ico" type="image/x-icon">
+    <title></title>
+</head>
+<body>
+    <div id="login">
+        @using (Html.BeginForm("Login", "Application", FormMethod.Post))
+        {
+            <fieldset class="clearfix">
+                <p><span class="fontawesome-user"></span><input type="text" name="Username" value="Username" onblur="if (this.value == '') this.value = 'Username'" onfocus="    if (this.value == 'Username') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
+                <p><span class="fontawesome-lock"></span><input type="password" name="Password" value="Password" onblur="if (this.value == '') this.value = 'Password'" onfocus="    if (this.value == 'Password') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
+                <p><input type="submit" value="Sign in"></p>
+            </fieldset>
+        }
+        <p> Doesn`t have an account? &nbsp;&nbsp;<a href="#">Register now</a><span class="fontawesome-arrow-right"></span></p>
+    </div>
+</body>
+</html>
