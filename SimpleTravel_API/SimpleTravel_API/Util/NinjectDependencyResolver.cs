@@ -75,8 +75,9 @@ namespace SimpleTravel_API.Util
         {
             kernel.Bind<IRepository<Apartment>>().To<ApartmentRepository>();
             kernel.Bind<IRepository<Trip>>().To<TripRepository>();
-            //kernel.Bind<IReservation>().To<CacheReservation>();
-            //kernel.Bind<IReservation>().To<CreditReservation>().Named("Values");
+            kernel.Bind<IRepository<Place>>().To<PlaceRepository>();
+            kernel.Bind<IRepository<Transport>>().To<TransportRepository>();
+            kernel.Bind<IRepository<NotesInObject>>().To<NotesInObjectRepository>();
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿@Model IEnumerable<string>
-    <div id="body">
+﻿    <div id="body">
         <section class="featured">
             <div class="content-wrapper">
                 <hgroup class="title">
@@ -21,9 +20,5 @@
         </section>
         <section class="content-wrapper main-content clear-fix">
             <h3>Current trips:</h3>
-            @foreach (var str in Model)
-            {
-                <li class="blue"><a href="#">@str</a></li>
-            }
         </section>
     </div>

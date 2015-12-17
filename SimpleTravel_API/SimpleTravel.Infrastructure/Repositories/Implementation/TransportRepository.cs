@@ -8,7 +8,7 @@ using System.Data.Entity;
 
 namespace SimpleTravel.Infrastructure.Repositories.Implementation
 {
-    public class TransportRepository
+    public class TransportRepository: IRepository<Transport>
     {
         private TripContext db;
         public TransportRepository()

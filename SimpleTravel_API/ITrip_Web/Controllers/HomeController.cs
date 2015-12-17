@@ -19,13 +19,14 @@ namespace ITrip_Web.Controllers
             client.BaseAddress = new Uri("http://localhost:24081");
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             HttpResponseMessage response = client.GetAsync("api/values").Result;
-            if (response.Content.ReadAsAsync<string>().Result == null)
+            string result = response.Content.ReadAsAsync<string>().Result;
+            if (string.IsNullOrEmpty(result))
             {
                 return View();
             }
             else
             {
-                return View(response.Content.ReadAsAsync<string>().Result);
+                return View(result);
             }
         }
 

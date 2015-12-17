@@ -4,6 +4,7 @@ namespace SimpleTravel.Infrastructure.Migrations
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
+    using SimpleTravel.Infrastructure.Entities;
 
     internal sealed class Configuration : DbMigrationsConfiguration<SimpleTravel.Infrastructure.Repositories.Implementation.TripContext>
     {
@@ -27,6 +28,11 @@ namespace SimpleTravel.Infrastructure.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+            context.Apartments.AddOrUpdate(
+                  new Apartment { Id = Guid.NewGuid(), Address = "Kiev", Name = "Premier Palace", TypeId = ApartmentType.Hotel},
+                  new Apartment { Id = Guid.NewGuid(), Address = "Sumy", Name = "Radisson", TypeId = ApartmentType.Hotel},
+                  new Apartment { Id = Guid.NewGuid(), Address = "New York", Name = "Grand Hayat", TypeId = ApartmentType.Hotel}
+                );
         }
     }
 }

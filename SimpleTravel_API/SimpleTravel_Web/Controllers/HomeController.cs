@@ -15,11 +15,27 @@ namespace SimpleTravel_API.Controllers
         }
         public ActionResult Index()
         {
-            HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri("http://localhost:24081");
-            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            HttpResponseMessage response = client.GetAsync("api/values").Result;
-            return View(response.Content.ReadAsAsync<IEnumerable<string>>().Result);
+            try
+            {
+                HttpClient client = new HttpClient();
+                client.BaseAddress = new Uri("http://localhost:24081");
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                HttpResponseMessage response = client.GetAsync("api/values").Result;
+                var result = response.Content.ReadAsAsync<IEnumerable<string>>().Result;
+                if (result == null)
+                {
+                    return View();
+                }
+                else
+                {
+                    return View((IEnumerable<string>)result);
+                }
+            }
+            catch (AggregateException e)
+            {
+                return View();
+            }                  
+            
         }
         protected override void Dispose(bool disposing)
         {
